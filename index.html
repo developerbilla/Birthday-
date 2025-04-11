@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday NAME! 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <div class="envelope-wrapper">
+        <div class="envelope">
+            <div class="front"></div>
+            <div class="card">
+                <div class="text">
+                    <h1 class="animate__animated animate__heartBeat animate__infinite">Click Me</h1>
+                </div>
+            </div>
+            <div class="flip"></div>
+            <div class="back"></div>
+        </div>
+    </div>
+    
+    <div class="birthday-content hidden">
+        <header>
+            <h1 class="glitch" data-text="Happy Birthday!">Happy Birthday!</h1>
+            <div class="name-container">
+                <h2 class="birthday-name">Name</h2>
+            </div>
+        </header>
+        
+        <div class="cake-container">
+            <div class="cake">
+                <div class="cake-top"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-bottom"></div>
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="message-container">
+            <div class="message">
+                
+                <p>On this special day, I want to celebrate you!</p>
+                <p>Your beauty, intelligence, and kindness light up every room you enter.</p>
+                <p>May your day be filled with love, laughter, and unforgettable moments.</p>
+                <p>Here's to another amazing year of your fabulous life!</p>
+                <div class="signature">
+                    <p>With love and admiration,</p>
+                    <p>Suryansh</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <h3>Memories To Treasure</h3>
+            <div class="polaroids">
+                <div class="polaroid">
+                    <div class="polaroid-img img1"><img src="1.jpg" alt="" height="200px" width="100%"></div>
+                    <p>Beautiful You</p>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-img img2"><img src="2.jpg" alt="" height="200px" width="100%"></div>
+                    <p>Your Gorgeous Pose</p>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-img img3"><img src="3.jpg" alt="" height="200px" width="100%"wq></div>
+                    <p>Unforgettable Pose</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gift-section">
+            <h3>Click to unwrap your virtual gifts</h3>
+            <div class="gift-container">
+                <div class="gift" id="gift1">
+                    <div class="gift-top"></div>
+                    <div class="gift-box"></div>
+                    <div class="ribbon"></div>
+                </div>
+                <div class="gift" id="gift2">
+                    <div class="gift-top"></div>
+                    <div class="gift-box"></div>
+                    <div class="ribbon"></div>
+                </div>
+                <div class="gift" id="gift3">
+                    <div class="gift-top"></div>
+                    <div class="gift-box"></div>
+                    <div class="ribbon"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="balloon-container">
+            <div class="balloon balloon1"></div>
+            <div class="balloon balloon2"></div>
+            <div class="balloon balloon3"></div>
+            <div class="balloon balloon4"></div>
+            <div class="balloon balloon5"></div>
+        </div>
+
+        <div class="heart-animation">
+            <div class="hearts">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="music-player">
+                <button id="music-toggle">
+                    <span class="music-icon">🎵</span>
+                    <span class="music-text">Play Birthday Song</span>
+                </button>
+                <audio id="birthday-song" loop>
+                    <source src="bday.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="countdown">
+                <p>Celebrating Your Special Day For:</p>
+                <div id="timer">00:00:00</div>
+            </div>
+        </footer>
+        
+        <div class="gift-modal" id="gift-modal">
+            <div class="gift-modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Your Special Gift</h2>
+                <div class="gift-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
